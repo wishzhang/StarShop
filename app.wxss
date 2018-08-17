@@ -1,0 +1,22 @@
+/**app.wxss**/
+.container-y {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+} 
+
+px-20{
+  padding-left:20
+}
+
+/* 
+字体族不搞先
+@font-face{
+  font-family: 'Pingfan-SC-Regular';
+  src:url('http://www.zhangw.xyz:5000/font/zhongshan.ttf');
+}
+
+text{
+  font-family: Pingfan-SC-Regular;
+} */

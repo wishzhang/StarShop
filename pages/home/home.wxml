@@ -1,0 +1,58 @@
+<!--pages/home/home.wxml-->
+<view class='container-y'>
+<!-- 轮播图 -->
+  <view class='banner'>
+    <image class='banner-img' src='banner.png'></image>
+  </view>
+  <!-- 分类 -->
+  <view class='classify'>
+    <view class='row' style='padding-bottom:0;'>
+      <view class='container-y classify-item'  wx:for='{{classifies1}}'>
+        <image class='classify-img' src='{{item.src}}'></image>
+        <text class='classify-txt'>{{item.text}}</text>
+      </view>
+    </view>
+
+    <view class='row'>
+      <view class='container-y classify-item'  wx:for='{{classifies2}}'>
+        <image class='classify-img' src='{{item.src}}'></image>
+        <text class='classify-txt'>{{item.text}}</text>
+      </view>
+    </view>
+  </view>
+  <hr class='item-line1' />
+  <!-- 热门资讯 -->
+  <view class='hot-news'>
+    <image src='hotnews.png' class='hot-news-title'></image>
+    <view class='colume-line'></view>
+    <image src='inform.png' class='hot-news-voice'></image>
+    <text class='hot-news-content'>商城开业狂风，四大重礼等你来抢~</text>
+  </view>
+<!-- 限时抢购 -->
+  <view class='item-line2'></view>
+  <view class='container-y limit-shop'>
+    <view class='limit-shop-header'>
+      <view class='left'>
+        <image class='limit-text-timeshop' src='limit.png'></image>
+        <image class='limit-img-time' src='time.png'></image>
+        <text class='limit-img-endline'>01:15:37</text>
+      </view>
+
+      <view class='right'>
+        <text class='limit-text-saying'>全场一折起</text>
+        <image class='limit-text-arrow' src='arrow.png'></image>
+      </view>
+    </view>
+    <!--限时抢购 内容 -->
+    <view class='limit-shop-content'>
+      <view class='limit-shop-item container-y' wx:for='{{shopitems}}'>
+        <image class='limit-shop-item-img1' src='{{item.src}}'></image>
+        <text class='limit-shop-item-text'>{{item.text}}</text>
+        <view class='limit-shop-item-img2'>
+          <text class='limit-shop-item-money'>{{item.labelMoney}}</text>
+          <text class='limit-shop-item-low'>{{item.labelLow}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
