@@ -1,0 +1,64 @@
+<!--pages/shopcar/shopcar.wxml-->
+<view class='container-shopcar container-y'>
+  <!-- 主体分类 -->
+  <view class=' container-y' wx:for='{{classes}}' wx:for-index="idx" wx:for-item="classchild">
+    <view class='classes-line app-bgcolor'></view>
+    <view class='classes-header app-pl app-pr app-border-top app-border-bottom'>
+      <view class='classes-header-left'>
+        <image class='img-check' src='checked.png'></image>
+        <text class='txt-title'>{{classchild.title}}</text>
+        <image class='img-arrow' src='arrow.png'></image>
+      </view>
+      <view class='classes-header-right'>
+        <text class='coupon'>领券</text>
+      </view>
+    </view>
+    <!-- item -->
+    <view class='classes-main container-y'  wx:for='{{classchild.items}}'>
+      <view class='classes-item  app-pl app-pr'>
+        <view class='classes-item-left'>
+          <image class='img-check' src='checked.png'></image>
+          <image class='thumbnail' src='{{item.src}}'></image>
+          <view class='description container-y'>
+            <view class='title app-txtcolor-title'>{{item.title}}</view>
+            <view class='color-size container-x'>
+              <block wx:for='{{item.descrip}}' wx:for-item='descripitem'>
+                <text class='txt-descrip'>{{descripitem.key}}：</text>
+                <text class='txt-descrip'>{{descripitem.value}}</text>
+                <text class='txt-descrip'>；</text>
+              </block>
+            </view>
+            <view class='num container-x'>
+              <text class='decrease'>-</text>
+              <text class='number'>{{item.num}}</text>
+              <text class='increase'>+</text>
+            </view>
+          </view>
+        </view>
+        <view class='classes-item-right container-y'>
+          <view class='top container-y'>
+            <text class='pre-price'>{{item.prePrice}}</text>
+            <text class='now-price'>{{item.nowPrice}}</text>
+          </view>
+          <view class='bottom'>
+            <image class='delete' src='delete.png'></image>
+          </view>
+        </view>
+      </view>
+              <hr class='item-line' />
+    </view>
+  </view>
+  <!-- 底部结算 -->
+  <view class='account'>
+    <view class='acount-left app-pl'>
+      <image class='img-check' src='checked.png'></image>
+      <text class='txt-choice'>全选</text>
+      <text class='txt-total'>合计：</text>
+      <text class='txt-money'>784.84</text>
+      <text class='txt-save'>为您节省605.2元</text>
+    </view>
+    <view class='acount-right'>
+      <text class='txt-clear'>去结算(2)</text>
+    </view>
+  </view>
+</view>

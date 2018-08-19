@@ -1,13 +1,69 @@
 /**app.wxss**/
 .container-y {
-  width:100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-} 
+}
 
-px-20{
-  padding-left:20
+.container-x{
+  display:flex;
+}
+
+/* 盒子空间样式 */
+
+.app-pl {
+  padding-left: 0.63rem;
+}
+
+.app-pr {
+  padding-right: 0.63rem;
+}
+
+.app-ml{
+}
+
+/* 颜色 */
+
+.app-bgcolor {
+  background-color: #f7f7f7;
+}
+
+.app-fgcolor {
+  background-color: #ff2150;
+}
+
+/* 字体颜色 */
+
+.app-txtcolor-main {
+  color: #666;
+}
+
+.app-txtcolor-title {
+  color: #333;
+}
+
+/* 边框颜色 */
+
+.app-border-top {
+  border-top: 1px solid #ddd;
+}
+
+.app-border-bottom {
+  border-bottom: 1px solid #ddd;
+}
+
+/* 字体大小 */
+
+.app-txtsize-main {
+  font-size: 0.56rem;
+}
+
+.app-txtsize-title {
+  font-size: 0.75rem;
+}
+
+.app-txtsize-note {
 }
 
 /* 
