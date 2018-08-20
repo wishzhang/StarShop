@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/mine/mine",
     "pages/shopcar/shopcar",
     "pages/home/home",
-    "pages/discover/discover",
-    "pages/mine/mine"
+    "pages/discover/discover"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -37,7 +37,7 @@
       {
         "pagePath": "pages/mine/mine",
         "text": "我的",
-        "iconPath": "assets/img/tabbar/mine.png",
+        "iconPath": "assets/img/tabbar/mine-unselected.png",
         "selectedIconPath": "assets/img/tabbar/mine.png"
       }
     ]

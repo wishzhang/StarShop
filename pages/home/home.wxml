@@ -1,20 +1,21 @@
 <!--pages/home/home.wxml-->
 <view class='container-y'>
-<!-- 轮播图 -->
+  <!-- 轮播图 -->
   <view class='banner'>
     <image class='banner-img' src='banner.png'></image>
   </view>
   <!-- 分类 -->
   <view class='classify'>
+    <!-- 第一行 -->
     <view class='row' style='padding-bottom:0;'>
-      <view class='container-y classify-item'  wx:for='{{classifies1}}'>
+      <view class='container-y classify-item' wx:for='{{classifies1}}'>
         <image class='classify-img' src='{{item.src}}'></image>
         <text class='classify-txt'>{{item.text}}</text>
       </view>
     </view>
-
+    <!-- 第二行 -->
     <view class='row'>
-      <view class='container-y classify-item'  wx:for='{{classifies2}}'>
+      <view class='container-y classify-item' wx:for='{{classifies2}}'>
         <image class='classify-img' src='{{item.src}}'></image>
         <text class='classify-txt'>{{item.text}}</text>
       </view>
@@ -28,9 +29,10 @@
     <image src='inform.png' class='hot-news-voice'></image>
     <text class='hot-news-content'>商城开业狂风，四大重礼等你来抢~</text>
   </view>
-<!-- 限时抢购 -->
+  <!-- 限时抢购 -->
   <view class='item-line2'></view>
   <view class='container-y limit-shop'>
+    <!-- 限时抢购：头部 -->
     <view class='limit-shop-header'>
       <view class='left'>
         <image class='limit-text-timeshop' src='limit.png'></image>
@@ -43,7 +45,7 @@
         <image class='limit-text-arrow' src='arrow.png'></image>
       </view>
     </view>
-    <!--限时抢购 内容 -->
+    <!--限时抢购：内容 -->
     <view class='limit-shop-content'>
       <view class='limit-shop-item container-y' wx:for='{{shopitems}}'>
         <image class='limit-shop-item-img1' src='{{item.src}}'></image>

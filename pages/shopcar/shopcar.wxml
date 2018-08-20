@@ -1,8 +1,9 @@
-<!--pages/shopcar/shopcar.wxml-->
+
 <view class='container-shopcar container-y'>
   <!-- 主体分类 -->
   <view class=' container-y' wx:for='{{classes}}' wx:for-index="idx" wx:for-item="classchild">
     <view class='classes-line app-bgcolor'></view>
+    <!-- 门店：头部 -->
     <view class='classes-header app-pl app-pr app-border-top app-border-bottom'>
       <view class='classes-header-left'>
         <image class='img-check' src='checked.png'></image>
@@ -13,7 +14,7 @@
         <text class='coupon'>领券</text>
       </view>
     </view>
-    <!-- item -->
+    <!-- 门店：商品 -->
     <view class='classes-main container-y'  wx:for='{{classchild.items}}'>
       <view class='classes-item  app-pl app-pr'>
         <view class='classes-item-left'>

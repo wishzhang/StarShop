@@ -1,2 +1,113 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class='container-y'>
+  <!-- 头部 用户基本信息 -->
+  <view class='user app-pl app-pr'>
+    <image class='user-avatar' src='avatar.png'></image>
+    <view class='user-descrip container-y'>
+      <text class='user-name'>喵呜酱</text>
+      <view class='user-collection'>
+        <view class='goods'>
+          <text class='goods-label'>收藏商品</text>
+          <text class='goods-num'>(102)</text>
+        </view>
+        <view class='store'>
+          <text class='store-label'>收藏店铺</text>
+          <text class='store-num'>(35)</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 用户订单 -->
+  <view class='order container-y'>
+    <view class='header app-pl app-pr'>
+      <view class='left container-x'>
+        <image class='order-img' src='order.png'></image>
+        <text class='order-txt'>我的订单</text>
+      </view>
+      <view class='right container-x'>
+        <text class='inspect-text'>查看全部订单</text>
+        <image class='arrow-right' src='arrow.png'></image>
+      </view>
+    </view>
+    <view class='main'>
+      <view class='order-item'>
+        <image class='order-item-img' src='wait-pay.png'></image>
+        <text class='order-item-txt'>待付款</text>
+      </view>
+      <view class='order-item'>
+        <image class='order-item-img' src='wait-receive.png'></image>
+        <text class='order-item-txt'>待收货</text>
+      </view>
+      <view class='order-item'>
+        <image class='order-item-img' src='wait-result.png'></image>
+        <text class='order-item-txt'>待评价</text>
+      </view>
+      <view class='order-item'>
+        <image class='order-item-img' src='wait-sale.png'></image>
+        <text class='order-item-txt'>售后</text>
+      </view>
+    </view>
+  </view>
+  <view class='item-line'></view>
+  <!-- 用户其他项目 -->
+  <view class='items container-y'>
+    <!-- 账号余额 -->
+    <view class='item'>
+      <view class='left'>
+        <image class='item-img' src='balance.png'></image>
+        <text class='item-txt'>账号余额</text>
+      </view>
+      <view class='right'>
+        <image class='arrow-right' src='arrow.png'></image>
+      </view>
+    </view>
+    <view class='item-line2'></view>
+    <!-- 积分 -->
+    <view class='item'>
+      <view class='left'>
+        <image class='item-img' src='point.png'></image>
+        <text class='item-txt'>积分</text>
+      </view>
+      <view class='right'>
+        <image class='arrow-right' src='arrow.png'></image>
+      </view>
+    </view>
+    <view class='item-line2'></view>
+    <!-- 优惠券 -->
+    <view class='item'>
+      <view class='left'>
+        <image class='item-img' src='coupon.png'></image>
+        <text class='item-txt'>优惠券</text>
+      </view>
+      <view class='right'>
+        <image class='arrow-right' src='arrow.png'></image>
+      </view>
+    </view>
+    <view class='item-line2'></view>
+
+    <view class='item-line'></view>
+    <!-- 管理收货地址 -->
+    <view class='item '>
+      <view class='left'>
+        <image class='item-img' src='address.png'></image>
+        <text class='item-txt'>管理收货地址</text>
+      </view>
+      <view class='right'>
+        <image class='arrow-right' src='arrow.png'></image>
+      </view>
+    </view>
+
+    <view class='item-line'></view>
+    <!-- 客服电话 -->
+    <view class='item app-border-bottom'>
+      <view class='left'>
+        <image class='item-img' src='service.png'></image>
+        <text class='item-txt'>客服电话</text>
+      </view>
+      <view class='right'>
+        <text class='right-txt'>029-88888888</text>
+        <image class='arrow-right' src='arrow.png'></image>
+      </view>
+    </view>
+
+  </view>
+</view>

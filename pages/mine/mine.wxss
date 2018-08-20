@@ -1,1 +1,205 @@
-/* pages/mine/mine.wxss */
+/* 公共样式 */
+
+.item-line {
+  width: 100%;
+  height: 0.5rem;
+  background-color: #f7f7f7;
+  border-top:0.03rem solid #f7f7f7;
+  border-bottom: 0.03rem solid #f7f7f7;
+}
+
+.item-line2{
+  width:calc(100% - 1.26rem);
+  height:0.03rem;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+}
+
+.arrow-right {
+  width: 0.31rem;
+  height: 0.56rem;
+}
+
+/* 用户基本信息 */
+
+.user {
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: orange;
+}
+
+.user-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  box-sizing: border-box;
+  border: 0.09rem solid white;
+  border-radius: 1.25rem;
+  background-color: red;
+}
+
+.user-descrip {
+  width: calc(100% - 2.5rem);
+  height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding-left: 0.59rem;
+  background-color: orange;
+}
+
+.user-name {
+  font-size: 0.88rem;
+  color: #fff;
+}
+
+.user-collection {
+  width: 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.goods {
+  display: flex;
+}
+
+.goods-label {
+  font-size: 0.56rem;
+  color: #fff;
+}
+
+.goods-num {
+  font-size: 0.56rem;
+  color: #fff;
+}
+
+.store {
+  display: flex;
+}
+
+.store-label {
+  font-size: 0.56rem;
+  color: #fff;
+}
+
+.store-num {
+  font-size: 0.56rem;
+  color: #fff;
+}
+
+.order {
+  background-color: white;
+}
+
+/* 订单 */
+
+.order .header {
+  width: 100%;
+  height: 1.91rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-top: 0.03rem solid #f7f7f7;
+  border-bottom: 0.03rem solid #f7f7f7;
+}
+
+.order .header .left {
+  width: 50%;
+}
+
+.order-img {
+  width: 0.91rem;
+  height: 0.91rem;
+  margin-right: 0.41rem;
+}
+
+.order-txt {
+  font-size: 0.69rem;
+  color: #333;
+}
+
+.order .header .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.inspect-text {
+  box-sizing: border-box;
+  font-size: 0.56rem;
+  color: #999;
+  padding-right: 0.22rem;
+}
+
+
+
+/* 订单item */
+
+.main {
+  width: 100%;
+  height: 3.19rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 0.63rem;
+}
+
+.order-item {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-item-img {
+  width: 0.94rem;
+  height: 0.94rem;
+}
+
+.order-item-txt {
+  margin-top: 0.21rem;
+  font-size: 0.63rem;
+  color: #999;
+}
+
+/* 用户其他项目 */
+
+.items {
+  background-color: white;
+  align-items: center;
+}
+
+.items .item {
+  width: 100%;
+  height: 1.91rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.63rem;
+  background-color: white;
+}
+
+.item-img {
+  width: 0.69rem;
+  height: 0.69rem;
+}
+
+.item-txt {
+  margin-left: 0.41rem;
+  font-size: 0.69rem;
+  color: #333;
+}
+
+.right-txt {
+  font-size: 0.69rem;
+  color: #666;
+  margin-right: 0.31rem;
+}
